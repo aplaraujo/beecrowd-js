@@ -1,5 +1,5 @@
 const input = require('fs').readFileSync('stdin', 'utf8');
-const lines = input.split(' ');
+const lines = input.split('\n');
 
 const getTotal = (code, quantity) => {
     let total;
@@ -21,12 +21,11 @@ const getTotal = (code, quantity) => {
     return `Total: R$ ${total.toFixed(2)}`
 }
 
-const numArr = [];
+const arr = lines.shift().split(' ').map(num => Number(num));
 
-for(let i = 0; i < lines.length; i++) {
-    numArr.push(parseInt(lines[i]));
-}
+const cod = arr[0];
+const qtd = arr[1];
 
-const [cod, qtd] = numArr;
+
 
 console.log(getTotal(cod, qtd));
