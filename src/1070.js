@@ -22,6 +22,6 @@ const getOddValues = (N) => {
 
 }
 
-const num = Number(lines);
+const num = Number(lines.shift());
 
 getOddValues(num);
