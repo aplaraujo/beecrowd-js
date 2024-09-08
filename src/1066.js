@@ -22,7 +22,7 @@ const getInfo = (numArr) => {
         }
     }
 
-    return `${even.length} valor(es) par(es), ${odd.length} valor(es) impar(es), ${above.length} valor(es) positivo(s), ${below.length} valor(es) negativo(s)`
+    return `${even.length} valor(es) par(es)\n${odd.length} valor(es) impar(es)\n${above.length}valor(es) positivo(s)\n${below.length} valor(es) negativo(s)`
 }
 
 const numArr = [];
