@@ -8,13 +8,13 @@ const getOddSum = (a, b) => {
     if (a < b) {
         for (let i = a + 1; i < b; i++) {
             if (i % 2 !== 0) {
-                odd.push(i)
+                odd.push(i);
             }
         }
     } else {
         for (let i = b + 1; i < a; i++) {
             if (i % 2 !== 0) {
-                odd.push(i)
+                odd.push(i);
             }
         }
     }
