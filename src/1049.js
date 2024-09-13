@@ -1,8 +1,11 @@
-const input = require('fs').readFileSync('stdin', 'utf8').split('\n');
+const input = require('fs').readFileSync('stdin', 'utf8');
+const lines = input.split('\n');
 
-let tipo1 = input[0];
-let tipo2 = input[1];
-let tipo3 = input[2];
+const arr = lines.map(el => el.replace('\r', ''));
+
+let tipo1 = arr[0];
+let tipo2 = arr[1];
+let tipo3 = arr[2];
  
 if (tipo1 === "vertebrado" && tipo2 === "ave" && tipo3 === "carnivoro") {
 		console.log("aguia");
