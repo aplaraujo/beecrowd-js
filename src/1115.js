@@ -13,15 +13,9 @@ const getQuadrant = (a, b) => {
     }
 }
 
-let arr = [];
-let str = '';
-
-while (str = lines.shift()) {
-    arr = str.split(' ');
-    let X = Number(arr[0]);
-    let Y = Number(arr[1]);
-
-    if (X !== 0 || Y !== 0) {
-        getQuadrant(X, Y);
-    }
+for (let i = 0; i < lines.length; i++) {
+    let line = lines[i].split(" ").map(num => Number(num));
+    let X = line[0];
+    let Y = line[1];
+    getQuadrant(X, Y);
 }
