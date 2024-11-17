@@ -18,7 +18,7 @@ const numPrimo = (num) => {
     }
 }
 
-const num = Number(lines);
+const num = Number(lines[0]);
 
 
 numPrimo(num);
