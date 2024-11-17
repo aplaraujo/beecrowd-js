@@ -3,21 +3,23 @@ const lines = input.split('\n');
 
 const N = Number(lines.shift());
 
-let arr = [];
-let str = '';
+for (let i = 1; i <= N; i++) {
+    let line = lines.shift().split(" ").map(num => Number(num));
+    let X = line[0];
+    let Y = line[1];
 
-while (str = lines.shift()) {
-    arr = str.split(' ').map(num => Number(num));
-    let X = arr[0];
-    let Y = arr[1];
-
+    let soma = 0;
+    let cont = 0;
+    
     if (X % 2 === 0) {
-        X++;
+        X++
     }
 
-    let an = X + (Y - 1) * 2;
-
-    let soma = Y * (X + an) / 2;
+    while (cont < Y) {
+        soma = soma + X;
+        X += 2;
+        cont++
+    }
 
     console.log(soma);
 }
