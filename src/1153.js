@@ -1,7 +1,7 @@
 const input = require('fs').readFileSync('stdin', 'utf8');
 const lines = input.split('\n');
 
-const num = Number(lines);
+const num = Number(lines[0]);
 
 let fat = 1;
 
